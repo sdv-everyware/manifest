@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SDV EveryWare on AOSP android-17.0.0_r1: the repositories of github.com/sdv-everyware laid
+     over the AOSP manifest. For .repo/local_manifests/ (README.md). -->
+<manifest>
+  <remote name="everyware" fetch="https://github.com/sdv-everyware/" />
+
+  <!-- Google's repositories we carry our commits on: the forks take their place -->
+  <remove-project name="platform/packages/services/display_safety" />
+  <project path="packages/services/display_safety" name="super-harry" remote="everyware" revision="everyware-17.0.0_r1" groups="swcar,pdk" />
+  <remove-project name="device/linaro/dragonboard" />
+  <project path="device/linaro/dragonboard" name="dragonboard" remote="everyware" revision="everyware-17.0.0_r1" groups="device,dragonboard,pdk" />
+
+  <!-- our own repositories -->
+  <project path="device/rb3/sdv_media_db845c" name="device-rb3" remote="everyware" revision="main" />
+  <project path="vendor/sdv-everyware/everyware" name="everyware" remote="everyware" revision="main" />
+  <project path="vendor/sdv-everyware/ui-lib" name="ui-lib" remote="everyware" revision="main" />
+  <project path="vendor/sdv-everyware/dnsproxyd" name="dnsproxyd" remote="everyware" revision="main" />
+  <project path="vendor/sdv-everyware/third_party/rust" name="third_party-rust" remote="everyware" revision="main" />
+  <project path="vendor/sdv-everyware/third_party/chrony" name="third_party-chrony" remote="everyware" revision="main" />
+  <project path="packages/services/display_safety/utils/tv-app" name="tv-app" remote="everyware" revision="main" />
+  <project path="packages/services/display_safety/utils/hub-app" name="hub-app" remote="everyware" revision="main" />
+  <project path="packages/services/display_safety/utils/pairs-app" name="pairs-app" remote="everyware" revision="main" />
+</manifest>
