@@ -29,6 +29,7 @@
   <project path="vendor/sdv-everyware/dnsproxyd" name="dnsproxyd" remote="everyware" revision="main" />
   <project path="vendor/sdv-everyware/third_party/rust" name="third_party-rust" remote="everyware" revision="main" />
   <project path="vendor/sdv-everyware/third_party/chrony" name="third_party-chrony" remote="everyware" revision="main" />
+  <project path="packages/services/display_safety/utils/template-app" name="template-app" remote="everyware" revision="main" />
   <project path="packages/services/display_safety/utils/smarthome-app" name="smarthome-app" remote="everyware" revision="main" />
   <project path="packages/services/display_safety/utils/tv-app" name="tv-app" remote="everyware" revision="main" />
   <project path="packages/services/display_safety/utils/hub-app" name="hub-app" remote="everyware" revision="main" />

@@ -25,7 +25,7 @@ What the manifest does:
 | `device-rb3` | the product `sdv_media_db845c` |
 | `everyware`, `ui-lib`, `dnsproxyd`, `third_party-rust`, `third_party-chrony` | under `vendor/sdv-everyware/` |
 | `AGENTS.md`, `CLAUDE.md` at the tree's top | links to `everyware`'s `AGENTS.md`, the guide for coding agents (`linkfile`, as AOSP links `Android.bp` from `build/soong`): an agent opened on the tree reads it first and finds the skills |
-| `smarthome-app`, `tv-app`, `hub-app`, `pairs-app` | the apps, under harry's `utils/` |
+| `template-app`, `smarthome-app`, `tv-app`, `hub-app`, `pairs-app` | the apps, under harry's `utils/`; `template-app` is the template of a new one |
 
 The design tools take DesignCompose's importer from
 [`automotive-design-compose`](https://github.com/sdv-everyware/automotive-design-compose)
