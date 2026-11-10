@@ -9,6 +9,13 @@
   <project path="packages/services/display_safety" name="super-harry" remote="everyware" revision="everyware-17.0.0_r1" groups="swcar,pdk" />
   <remove-project name="device/linaro/dragonboard" />
   <project path="device/linaro/dragonboard" name="dragonboard" remote="everyware" revision="everyware-17.0.0_r1" groups="device,dragonboard,pdk" />
+  <!-- Wayland for harry's zones: one commit each that lets a vendor APEX link them -->
+  <remove-project name="platform/external/libffi" />
+  <project path="external/libffi" name="libffi" remote="everyware" revision="everyware-17.0.0_r1" groups="pdk" />
+  <remove-project name="platform/external/wayland" />
+  <project path="external/wayland" name="wayland" remote="everyware" revision="everyware-17.0.0_r1" groups="pdk" />
+  <remove-project name="platform/external/wayland-protocols" />
+  <project path="external/wayland-protocols" name="wayland-protocols" remote="everyware" revision="everyware-17.0.0_r1" groups="pdk" />
 
   <!-- our own repositories -->
   <project path="device/rb3/sdv_media_db845c" name="device-rb3" remote="everyware" revision="main" />

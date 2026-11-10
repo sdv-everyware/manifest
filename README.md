@@ -21,9 +21,10 @@ What the manifest does:
 | | |
 |---|---|
 | `super-harry`, `dragonboard` | take the place of AOSP's `packages/services/display_safety` and `device/linaro/dragonboard` (`remove-project`, then our fork at its branch `everyware-17.0.0_r1`) |
+| `libffi`, `wayland`, `wayland-protocols` | take the place of AOSP's `external/libffi`, `external/wayland` and `external/wayland-protocols`: one commit each in `Android.bp` (`product_available`, any APEX, `min_sdk_version`), so that harry's Wayland zones link them into an app's vendor APEX. No source of the libraries is changed |
 | `device-rb3` | the product `sdv_media_db845c` |
 | `everyware`, `ui-lib`, `dnsproxyd`, `third_party-rust`, `third_party-chrony` | under `vendor/sdv-everyware/` |
-| `tv-app`, `hub-app`, `pairs-app` | the apps, under harry's `utils/` |
+| `smarthome-app`, `tv-app`, `hub-app`, `pairs-app` | the apps, under harry's `utils/` |
 
 The design tools take DesignCompose's importer from
 [`automotive-design-compose`](https://github.com/sdv-everyware/automotive-design-compose)
