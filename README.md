@@ -9,11 +9,35 @@ mkdir everyware && cd everyware
 repo init -u https://android.googlesource.com/platform/manifest -b android-17.0.0_r1
 git clone -b everyware-17.0.0_r1 https://github.com/sdv-everyware/manifest .repo/local_manifests
 repo sync -c -j8
-# WHAT: Linaro's prebuilt vendor package for the RB3 (firmware), once; env.sh says the URL
+```
+
+Then one product, each with its own out directory. Its repository's README has the details.
+
+| Target | Product | Repository | Needs |
+|---|---|---|---|
+| Cuttlefish emulator | `sdv_media_everyware_cf` | [device-cf](https://github.com/sdv-everyware/device-cf) | a Linux host with KVM and the Cuttlefish host packages; no board |
+| Qualcomm RB3 (DragonBoard 845c) | `sdv_media_db845c` | [device-rb3](https://github.com/sdv-everyware/device-rb3) | the board; the reference target |
+| Raspberry Pi 5 | `sdv_media_rpi5` | [device-rpi5](https://github.com/sdv-everyware/device-rpi5) | the board and two projects of the Raspberry Pi port (its README); work in progress |
+
+```bash
+# WHAT: the emulator: build, start, the panel in the browser at https://localhost:1443
+source device/cf-everyware/sdv_media_everyware_cf/tools/env.sh
+m
+device/cf-everyware/sdv_media_everyware_cf/tools/run.sh start
+```
+
+```bash
+# WHAT: the RB3: Linaro's prebuilt vendor package (firmware), once; env.sh says the URL
 device/linaro/dragonboard/vendor-package-ver.sh url
-# WHAT: the environment of the product and the build
 source device/rb3/sdv_media_db845c/tools/env.sh
 m
+```
+
+```bash
+# WHAT: the Raspberry Pi 5: build, then the image of the SD card
+source device/rpi5/sdv_media_rpi5/tools/env.sh
+m
+device/rpi5/sdv_media_rpi5/tools/mkimg.sh
 ```
 
 What the manifest does:
