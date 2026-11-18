@@ -19,6 +19,8 @@
 
   <!-- our own repositories -->
   <project path="device/rb3/sdv_media_db845c" name="device-rb3" remote="everyware" revision="main" />
+  <project path="device/cf-everyware/sdv_media_everyware_cf" name="device-cf" remote="everyware" revision="main" />
+  <project path="device/rpi5/sdv_media_rpi5" name="device-rpi5" remote="everyware" revision="main" />
   <!-- the guide for coding agents at the tree's top, where an agent opened on the tree looks:
        AGENTS.md for every agent that reads the open standard, CLAUDE.md for Claude Code -->
   <project path="vendor/sdv-everyware/everyware" name="everyware" remote="everyware" revision="main">
@@ -34,4 +36,5 @@
   <project path="packages/services/display_safety/utils/tv-app" name="tv-app" remote="everyware" revision="main" />
   <project path="packages/services/display_safety/utils/hub-app" name="hub-app" remote="everyware" revision="main" />
   <project path="packages/services/display_safety/utils/pairs-app" name="pairs-app" remote="everyware" revision="main" />
+  <project path="packages/services/display_safety/utils/camera-app" name="camera-app" remote="everyware" revision="main" />
 </manifest>
