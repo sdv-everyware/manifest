@@ -2,7 +2,7 @@
 <!-- SDV EveryWare on AOSP android-17.0.0_r1: the repositories of github.com/sdv-everyware laid
      over the AOSP manifest. For .repo/local_manifests/ (README.md). -->
 <manifest>
-  <remote name="everyware" fetch="https://github.com/sdv-everyware/" />
+  <remote name="everyware" fetch="git@github.com:sdv-everyware" />
 
   <!-- Google's repositories we carry our commits on: the forks take their place -->
   <remove-project name="platform/packages/services/display_safety" />
