@@ -21,6 +21,8 @@ Then one product, each with its own out directory. Its repository's README has t
 
 ```bash
 # WHAT: the emulator: build, start, the panel in the browser at https://localhost:1443
+# Install the Cuttlefish host packages (cuttlefish-base, cuttlefish-user) first by following
+# https://github.com/google/android-cuttlefish#installing-the-packages
 source device/cf-everyware/sdv_media_everyware_cf/tools/env.sh
 m
 device/cf-everyware/sdv_media_everyware_cf/tools/run.sh start
