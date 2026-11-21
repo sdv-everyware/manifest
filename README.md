@@ -29,8 +29,8 @@ device/cf-everyware/sdv_media_everyware_cf/tools/run.sh start
 ```
 
 ```bash
-# WHAT: the RB3: Linaro's prebuilt vendor package (firmware), once; env.sh says the URL
-device/linaro/dragonboard/vendor-package-ver.sh url
+# WHAT: the RB3: Linaro's prebuilt vendor package (firmware), once
+device/linaro/dragonboard/fetch-vendor-package.sh
 source device/rb3/sdv_media_db845c/tools/env.sh
 m
 ```
