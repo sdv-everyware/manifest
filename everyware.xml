@@ -37,4 +37,5 @@
   <project path="packages/services/display_safety/utils/hub-app" name="hub-app" remote="everyware" revision="main" />
   <project path="packages/services/display_safety/utils/pairs-app" name="pairs-app" remote="everyware" revision="main" />
   <project path="packages/services/display_safety/utils/camera-app" name="camera-app" remote="everyware" revision="main" />
+  <project path="packages/services/display_safety/utils/doom-app" name="doom-app" remote="everyware" revision="main" />
 </manifest>
