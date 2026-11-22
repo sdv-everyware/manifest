@@ -51,7 +51,7 @@ What the manifest does:
 | `device-rb3`, `device-cf`, `device-rpi5` | the products: `sdv_media_db845c` (Qualcomm RB3), `sdv_media_everyware_cf` (the Cuttlefish emulator), `sdv_media_rpi5` (Raspberry Pi 5) |
 | `everyware`, `ui-lib`, `dnsproxyd`, `third_party-rust`, `third_party-chrony` | under `vendor/sdv-everyware/` |
 | `AGENTS.md`, `CLAUDE.md` at the tree's top | links to `everyware`'s `AGENTS.md`, the guide for coding agents (`linkfile`, as AOSP links `Android.bp` from `build/soong`): an agent opened on the tree reads it first and finds the skills |
-| `template-app`, `smarthome-app`, `tv-app`, `hub-app`, `pairs-app`, `camera-app` | the apps, under harry's `utils/`; `template-app` is the template of a new one, `camera-app` the panel's camera, a process of its own |
+| `template-app`, `smarthome-app`, `tv-app`, `hub-app`, `pairs-app`, `camera-app`, `doom-app` | the apps, under harry's `utils/`; `template-app` is the template of a new one, `camera-app` the panel's camera, a process of its own, `doom-app` the panel's game (DOOM), in an image only when it is built with `EVERYWARE_GAME=true` |
 
 The design tools take DesignCompose's importer from
 [`automotive-design-compose`](https://github.com/sdv-everyware/automotive-design-compose)
